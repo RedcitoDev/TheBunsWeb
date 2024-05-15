@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Bahnscrift';
+  src: url('./fonts/font/BAHNSCHRIFT.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'Bahnscrift SemiBold';
+  src: url('./fonts/font/BAHNSCHRIFT2.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Bahnscrift Bold';
+  src: url('./fonts/font/BAHNSCHRIFT3.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+body{
+  font-family: "Bahnscrift";
+}
