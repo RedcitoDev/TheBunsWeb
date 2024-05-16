@@ -19,7 +19,7 @@ export default function Root() {
                     <img className='w-12 md:w-20' src={Logo} alt="logo The Buns" />
                 </div>
                 <div className='flex align-middle'>
-                    <button className=''><span className='py-2 px-5 md:py-3 md:px-10 text-white border-slate-100 border-2 rounded-xl'>Connect Wallet</span></button>
+                    <button className=''><span className='py-2 px-5 md:py-3 md:px-10 text-white border-slate-100 font-black border-2 rounded-xl'>Connect Wallet</span></button>
                 </div>
             </nav>
         </header>
@@ -28,7 +28,8 @@ export default function Root() {
                 <img src={BGHeader} alt="" />
             </div>
             <div className='fixed justify-center align-middle w-full h-full z-10'>
-                <h1 className='text-6xl text-center py-64 font-bold text-white'>We Build, We Bun</h1>
+                <h1 className='md:text-8xl text-center text-2xl pt-16 md:pt-52 font-bold text-white'>We Build, We Bun</h1>
+                <h1 className='md:text-lg text-center text-xs px-36 md:px-96 font-light text-white'>Holder IP based collection, no promises, just art, do what you love with your BunArt collection based on gaming culture, everything is a parody and not a direct correlation with any specific video game</h1>
             </div>
             <div className='absolute z-10'>
                 <img src={Grass1} alt="" />
@@ -44,6 +45,10 @@ export default function Root() {
             </div>
             <div className='absolute z-10'>
                 <img src={FrontShadow2} alt="" />
+                <div className='container'>
+                    <h1 className='md:text-8xl text-center text-2xl font-bold text-white'>The Buns Hefty Hares</h1>
+                    <h1 className='md:text-md text-center text-2xl md:px-60 font-bold text-white'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id repudiandae aut esse placeat animi dolores ex vitae saepe error exercitationem quis magni rem beatae asperiores neque assumenda reprehenderit hic culpa autem, sed illum corrupti, officia necessitatibus. Provident possimus quisquam et eaque harum nostrum quam aliquid accusantium saepe expedita maiores sit atque, omnis aliquam est officia deleniti consequatur neque, iusto nisi odio, ad excepturi suscipit? Nobis, nesciunt?</h1>
+                </div>
             </div>
         </section>
       </>
