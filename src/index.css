@@ -26,3 +26,8 @@
 body{
   font-family: "Bahnscrift";
 }
+
+.bg-blue-buns{
+  background: rgb(0,71,143);
+  background: linear-gradient(180deg, rgba(0,71,143,1) 0%, rgba(0,0,0,1) 100%);
+}
