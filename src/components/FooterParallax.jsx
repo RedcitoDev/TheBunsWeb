@@ -25,18 +25,19 @@ const HeaderParallax = () => {
       
   return (
     <>
-        <div className='w-full h-screen'>
-            <div className='relative w-full h-screen'>
+        <div className='w-full h-auto 2xl:h-[90vh] xl:h-[100vh] lg:h-[80vh] md:h-[60vh] bg-[#000014]'>
+            <div className='relative w-full h-auto'>
                 <Plx parallaxData={parallaxData}>
                     <img className="absolute w-full h-auto z-0" src={BGHeader} alt="" />
                     <div className='flex justify-center'>
-                      <img className="absolute z-0" src={Logo} alt="" />
+                      <img className="absolute 2xl:py-40 xl:w-96 xl:py-20 lg:w-80 lg:py-10 md:w-72 w-40 py-5 z-0" src={Logo} alt="" />
                     </div>
                     <img className="absolute z-20 w-full h-auto" src={Grass1} alt="" />
                     <img className='absolute z-30 w-full h-auto' src={Grass2} alt="" />
                     <img className="absolute z-50 w-full h-auto"  src={FrontShadow} alt="" />
                     <img className="absolute z-50 w-full h-auto" src={FrontShadow2} alt="" />
                 </Plx>
+                
             </div>
         </div>
     </>
