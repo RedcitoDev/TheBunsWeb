@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "embla-carousel": "^8.1.5",
+    "embla-carousel-react": "^8.1.5",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.0",
     "lucide-react": "^0.378.0",

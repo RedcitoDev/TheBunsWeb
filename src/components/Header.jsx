@@ -42,7 +42,7 @@ const Header = () => {
                         <img className='w-12 md:w-20' src={Logo} alt="logo The Buns" />
                     </div>
                     <div className='flex items-center'>
-                        <button className='py-2 px-5 md:py-3 md:px-10 text-white border-slate-100 font-black border-2 rounded-xl'>
+                        <button className='py-2 px-5 md:py-3 md:px-10 text-white hover:bg-[#fb592f] ease-in-out duration-300 border-slate-100 font-black border-2 rounded-xl'>
                             Connect Wallet
                         </button>
                     </div>
