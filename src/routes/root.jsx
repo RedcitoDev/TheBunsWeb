@@ -33,7 +33,7 @@ export default function Root() {
         </div>
         <section className='relative h-auto w-full text-center md:py-0 pt-64'>
             <div className='pt-0 2xl:pt-40 bg-[#000014]'>
-                <h2 className='text-white text-xl 2xl:text-9xl xl:text-8xl lg:text-7xl md:text-6xl font-bold'>The Buns Hefty Hares</h2>
+                <h2 className='text-white text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-bold xl:py-0 py-5'>The Buns Hefty Hares</h2>
                 <p className='text-white 2xl:text-2xl 2xl:px-72 xl:text-lg xl:px-52 lg:px-40 md:px-24 px-10 text-sm font-light 2xl:py-32'>The community of The Buns consists of digital art enthusiasts, tech innovators, and passionate collectors who share a love for rotund bunnies and blockchain technology. This vibrant and active community is dedicated to fostering creativity and innovation, providing a space where members can connect, share experiences, and collaborate on new projects.
                 <br />
                 By joining The Buns community, members gain access not only to a unique collection of NFTs but also to a group of individuals who value originality and imagination. Participation in special events, early access to future releases, and the opportunity to influence the collection's development are just a few of the benefits of being part of this community.
@@ -43,7 +43,7 @@ export default function Root() {
                   <Lottie animationData={BunSurf}></Lottie>
                 </div>
             </div>
-            <div className='bg-blue-buns w-full text-center py-20 md:py-40 z-50'>
+            <div className='bg-blue-buns w-full text-center md:py-40 z-50'>
                   <ComicBun></ComicBun>
                   <h3 className='text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-black text-white'>The Collection</h3>
                   <p className='text-sm 2xl:text-2xl xl:text-xl md:text-lg font-light 2xl:px-72 md:px-20 px-10 text-white py-10'>The Buns is a captivating collection of 4,444 enchanting, rotund hares, each uniquely frolicking through the verdant forests of the Ethereum blockchain. This collection, rich in intellectual property rights, showcases a tapestry of digital artistry and innovation, marking a milestone of creativity in the blockchain ecosystem.</p>
@@ -84,15 +84,15 @@ export default function Root() {
               </div>
               <section className='w-full bg-black text-white'>
                 <div>
-                  <p className='font-bold text-center xl:py-5 py-20 text-white xl:text-9xl text-8xl'>Coming Soon</p>
+                  <p className='font-bold text-center xl:py-5 py-20 text-white text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl'>Coming Soon</p>
                 </div>
                 <div className='xl:grid grid-flow-col justify-center'>
                   <div className="xl:py-20 px-20">
                     <EmblaCarousel slides={SLIDES} options={OPTIONS} />
                   </div>
                   <div className="xl:pr-32 px-20 py-20">
-                    <p className='xl:text-start text-center xl:text-7xl text-8xl font-semibold'>We Bun</p>
-                    <p className='xl:text-start text-center py-5 font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam itaque at repellendus assumenda non dignissimos aperiam labore, odio ab voluptates recusandae quaerat rerum provident pariatur illum modi saepe perferendis. Dignissimos porro, ab, commodi, hic autem incidunt itaque distinctio error nemo laudantium soluta? Praesentium, provident quod. Itaque voluptatibus optio ex facilis laudantium est quae amet magni, voluptatum enim quas nulla corporis porro possimus quidem dignissimos quod accusantium? Velit pariatur id eligendi cum quo officiis asperiores provident, rem voluptatibus error nobis, cupiditate assumenda et quibusdam vel excepturi beatae. Ut consequuntur saepe consequatur culpa itaque quia error eius voluptate, quo doloremque maxime.</p>
+                    <p className='xl:text-start text-center text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-semibold'>We Bun</p>
+                    <p className='xl:text-start text-center py-5 font-light text-sm xl:md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam itaque at repellendus assumenda non dignissimos aperiam labore, odio ab voluptates recusandae quaerat rerum provident pariatur illum modi saepe perferendis. Dignissimos porro, ab, commodi, hic autem incidunt itaque distinctio error nemo laudantium soluta? Praesentium, provident quod. Itaque voluptatibus optio ex facilis laudantium est quae amet magni, voluptatum enim quas nulla corporis porro possimus quidem dignissimos quod accusantium? Velit pariatur id eligendi cum quo officiis asperiores provident, rem voluptatibus error nobis, cupiditate assumenda et quibusdam vel excepturi beatae. Ut consequuntur saepe consequatur culpa itaque quia error eius voluptate, quo doloremque maxime.</p>
                     <div className='xl:text-start text-center py-2'>
                       <a href="http://" className='items-center py-2 px-5 border-2 rounded-lg hover:bg-[#fb592f] ease-in-out duration-300'>More...</a>
                     </div>
@@ -101,7 +101,7 @@ export default function Root() {
               </section>
               <section className='w-full bg-black'>
                 <div>
-                  <p className='font-bold text-center xl:py-5 py-20 text-white xl:text-9xl text-8xl'>More projects</p>
+                  <p className='font-bold text-center xl:py-5 py-20 text-white text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl'>More projects</p>
                 </div>
                 <div className="xl:px-32 px-10 xl:py-20">
                   <div className="grid place-content-center auto-rows-[350px] xl:grid-cols-3 grid-cols-1 xl:gap-4 gap-20">
