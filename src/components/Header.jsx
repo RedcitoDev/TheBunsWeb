@@ -9,6 +9,7 @@ import MenuImage from '../images/bunAlone.png'; // Imagen del lado izquierdo
 
 const Header = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentAccount, setCurrentAccount] = useState();
 
     const toggleModal = () => {
         setIsModalOpen(!isModalOpen);
@@ -27,23 +28,49 @@ const Header = () => {
         };
     }, [isModalOpen]);
 
+    const connectWallet = async () => {
+        try {
+            if (!window.ethereum) return alert("You don't have metamask installed");
+
+            const accounts = await window.ethereum.request({ method: "eth_requestAccounts" });
+            setCurrentAccount(accounts[0]);
+        } catch (error) {
+            console.log(error);
+            throw new Error("No Object found");
+        }
+    }
+
+    const truncateAddress = (address) => {
+        if (!address) return '';
+        return `${address.slice(0, 6)}...${address.slice(-4)}`;
+    };
+
     return (
         <>
             <header className='fixed w-full z-50'>
                 <nav className='flex justify-between px-5 py-5 md:px-10 md:py-10 items-center'>
                     <div className='flex gap-5 items-center'>
                         <button onClick={toggleModal}>
-                            <img 
-                                className='w-10 h-10 md:w-10 md:h-10' 
-                                src={isModalOpen ? CloseIcon : Burger} 
-                                alt={isModalOpen ? "Close Menu" : "Menu Icon"} 
+                            <img
+                                className='w-10 h-10 md:w-10 md:h-10'
+                                src={isModalOpen ? CloseIcon : Burger}
+                                alt={isModalOpen ? "Close Menu" : "Menu Icon"}
                             />
                         </button>
                         <img className='w-12 md:w-20' src={Logo} alt="logo The Buns" />
                     </div>
                     <div className='flex items-center'>
-                        <button className='py-2 px-5 md:py-3 md:px-10 text-white hover:bg-[#fb592f] ease-in-out duration-300 border-slate-100 font-black border-2 rounded-xl'>
-                            Connect Wallet
+                        <button onClick={connectWallet} className='relative group py-2 px-5 md:py-3 md:px-10 text-white hover:bg-[#fb592f] ease-in-out duration-300 border-slate-100 font-black border-2 rounded-xl'>
+                            {!currentAccount ? (
+                                "Connect Wallet"
+                            ) : (
+                                <span>
+                                    {truncateAddress(currentAccount)}
+                                    <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-auto p-2 min-w-max bg-black text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                        {currentAccount}
+                                    </span>
+                                </span>
+                            )}
                         </button>
                     </div>
                 </nav>
