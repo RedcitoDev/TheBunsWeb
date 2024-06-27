@@ -12,6 +12,7 @@ import Lottie from 'lottie-react';
 import BunSurf from '../lotties/bunSurf.json'
 import Header from '../components/Header';
 import '../css/embla.css'
+import ComicBun from '../components/ComicBun';
 export default function Root() {
   const items = [
     { href: 'https://example.com/1', imgSrc: 'https://i.seadn.io/s/primary-drops/0x248e21b0aa161efe3045e3d067d972cd6a01d1b5/31488398:about:media:a947d416-7696-4d76-b1c2-ed1344003fb9.png?auto=format&dpr=1&w=1920', imgAlt: 'Project Lil Buns', title: 'Lil Buns', socialUrlX: 'https://x.com/TheBunsNFTs', socialUrlDis: 'https://discord.gg/vinylverse', socialUrlOS: 'https://opensea.io/collection/hefty-presents' },
@@ -43,6 +44,7 @@ export default function Root() {
                 </div>
             </div>
             <div className='bg-blue-buns w-full text-center py-20 md:py-40 z-50'>
+                  <ComicBun></ComicBun>
                   <h3 className='text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-black text-white'>The Collection</h3>
                   <p className='text-sm 2xl:text-2xl xl:text-xl md:text-lg font-light 2xl:px-72 md:px-20 px-10 text-white py-10'>The Buns is a captivating collection of 4,444 enchanting, rotund hares, each uniquely frolicking through the verdant forests of the Ethereum blockchain. This collection, rich in intellectual property rights, showcases a tapestry of digital artistry and innovation, marking a milestone of creativity in the blockchain ecosystem.</p>
                   <div className='flex 2xl:px-0 justify-center'>
@@ -82,16 +84,16 @@ export default function Root() {
               </div>
               <section className='w-full bg-black text-white'>
                 <div>
-                  <p className='font-bold text-center py-5 text-white text-9xl'>Coming Soon</p>
+                  <p className='font-bold text-center xl:py-5 py-20 text-white xl:text-9xl text-8xl'>Coming Soon</p>
                 </div>
-                <div className='grid grid-flow-col justify-center'>
-                  <div className="py-20 px-20">
+                <div className='xl:grid grid-flow-col justify-center'>
+                  <div className="xl:py-20 px-20">
                     <EmblaCarousel slides={SLIDES} options={OPTIONS} />
                   </div>
-                  <div className="pr-32 px-20 py-20">
-                    <p className='text-start text-7xl font-semibold'>We Bun</p>
-                    <p className='text-start py-5 font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam itaque at repellendus assumenda non dignissimos aperiam labore, odio ab voluptates recusandae quaerat rerum provident pariatur illum modi saepe perferendis. Dignissimos porro, ab, commodi, hic autem incidunt itaque distinctio error nemo laudantium soluta? Praesentium, provident quod. Itaque voluptatibus optio ex facilis laudantium est quae amet magni, voluptatum enim quas nulla corporis porro possimus quidem dignissimos quod accusantium? Velit pariatur id eligendi cum quo officiis asperiores provident, rem voluptatibus error nobis, cupiditate assumenda et quibusdam vel excepturi beatae. Ut consequuntur saepe consequatur culpa itaque quia error eius voluptate, quo doloremque maxime.</p>
-                    <div className='text-start py-2'>
+                  <div className="xl:pr-32 px-20 py-20">
+                    <p className='xl:text-start text-center xl:text-7xl text-8xl font-semibold'>We Bun</p>
+                    <p className='xl:text-start text-center py-5 font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam itaque at repellendus assumenda non dignissimos aperiam labore, odio ab voluptates recusandae quaerat rerum provident pariatur illum modi saepe perferendis. Dignissimos porro, ab, commodi, hic autem incidunt itaque distinctio error nemo laudantium soluta? Praesentium, provident quod. Itaque voluptatibus optio ex facilis laudantium est quae amet magni, voluptatum enim quas nulla corporis porro possimus quidem dignissimos quod accusantium? Velit pariatur id eligendi cum quo officiis asperiores provident, rem voluptatibus error nobis, cupiditate assumenda et quibusdam vel excepturi beatae. Ut consequuntur saepe consequatur culpa itaque quia error eius voluptate, quo doloremque maxime.</p>
+                    <div className='xl:text-start text-center py-2'>
                       <a href="http://" className='items-center py-2 px-5 border-2 rounded-lg hover:bg-[#fb592f] ease-in-out duration-300'>More...</a>
                     </div>
                   </div>
@@ -99,18 +101,18 @@ export default function Root() {
               </section>
               <section className='w-full bg-black'>
                 <div>
-                  <p className='font-bold text-center py-5 text-white text-9xl'>More projects</p>
+                  <p className='font-bold text-center xl:py-5 py-20 text-white xl:text-9xl text-8xl'>More projects</p>
                 </div>
-                <div className="px-32 py-20">
-                  <div className="grid place-content-center auto-rows-[350px] grid-cols-3 gap-4">
+                <div className="xl:px-32 px-10 xl:py-20">
+                  <div className="grid place-content-center auto-rows-[350px] xl:grid-cols-3 grid-cols-1 xl:gap-4 gap-20">
                     {items.map((item, i) => (
                       <div
                         href={item.href}
                         key={i}
-                        className={`group relative hover:scale-95 hover:border-[#fb592f] hover:drop ease-in-out duration-300 row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 ${i === 3 || i === 6 ? "col-span-2" : ""}`}
+                        className={`group relative hover:scale-95 hover:border-[#fb592f] hover:drop ease-in-out duration-300 row-span-1 rounded-xl border-2 border-slate-400/10 bg-neutral-100 p-4 dark:bg-neutral-900 ${i === 3 || i === 6 ? "xl:col-span-2 col-span-1" : ""}`}
                       >
                         <img src={item.imgSrc} alt={item.imgAlt} className="w-full h-full object-cover rounded-xl group-hover:opacity-75" />
-                        <div className="absolute inset-0 rounded-xl flex items-end text-start opacity-0 group-hover:opacity-100 transition-opacity ease-in-out duration-300">
+                        <div className="absolute inset-0 rounded-xl flex items-end text-start xl:opacity-0 xl:group-hover:opacity-100 xl:transition-opacity xl:ease-in-out xl:duration-300">
                           <div className="w-full bg-gradient-to-t from-black via-transparent to-transparent p-10 rounded-b-xl">
                             <span className="text-white text-6xl font-semibold">{item.title}</span>
                             <div className='flex 2xl:gap-5 gap-16 justify-start'>
