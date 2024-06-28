@@ -48,7 +48,7 @@ export default function Root() {
                   <h3 className='text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-black text-white'>The Collection</h3>
                   <p className='text-sm 2xl:text-2xl xl:text-xl md:text-lg font-light 2xl:px-72 md:px-20 px-10 text-white py-10'>The Buns is a captivating collection of 4,444 enchanting, rotund hares, each uniquely frolicking through the verdant forests of the Ethereum blockchain. This collection, rich in intellectual property rights, showcases a tapestry of digital artistry and innovation, marking a milestone of creativity in the blockchain ecosystem.</p>
                   <div className='flex 2xl:px-0 justify-center'>
-                    <img className='drop-shadow-md xl:px-20 md:px-10 px-10 hover:scale-105 hover:drop-shadow-lg ease-in-out duration-300' src={GalleryBuns} alt="Gallery of the collection buns hefty hares" />
+                    <img className='drop-shadow-md w-[80%] xl:px-20 md:px-10 px-10 hover:scale-105 hover:drop-shadow-lg ease-in-out duration-300' src={GalleryBuns} alt="Gallery of the collection buns hefty hares" />
                   </div>
                   <div className='flex py-20 w-full justify-center'>
                     <div className='flex 2xl:gap-32 gap-16'>
@@ -138,17 +138,19 @@ export default function Root() {
                 </div>
               </section>
               <FooterParallax></FooterParallax>
-              <div className='absolute text-white w-full h-auto pt-72 2xl:pt-96 2xl:bg-transparent 2xl:mt-20 xl:pt-20 xl:bg-transparent lg:bg-[#000014] lg:py-10 md:bg-[#000014] md:py-5 z-50 flex justify-between'>
-                <p className='px-5 text-[7px] md:text-base'>
-                  Copyright 2024 Vinyl Productions
-                </p>
-                <div className='md:px-10 text-[5px] md:text-base'>
-                  <a href="#" className='border-r-2 border-slate-100 px-2 hover:text-slate-400 ease-in-out duration-300'>
-                    Privacy Policy
-                  </a>
-                  <a href="#" className='px-2 hover:text-slate-400 ease-in-out duration-300'>
-                    Terms & Conditions
-                  </a>
+              <div className='relative text-white w-full h-auto pt-72 2xl:pt-96 2xl:bg-transparent md:mt-5 2xl:mt-20 xl:pt-40 xl:bg-transparent lg:bg-[#000014] lg:py-10 md:bg-[#000014] md:py-10 z-50 grid md:flex md:justify-between'>
+                <div className='bg-[#000014] grid md:flex md:justify-between w-full py-10 lg:py-0'>
+                  <p className='px-10 text-[8px] md:text-base bg-[#000014]'>
+                    Copyright 2024 Vinyl Productions
+                  </p>
+                  <div className='md:px-10 text-[10px] md:text-base bg-[#000014]'>
+                    <a href="#" className='border-r-[1px] border-slate-100 px-2 hover:text-slate-400 ease-in-out duration-300 bg-[#000014]'>
+                      Privacy Policy
+                    </a>
+                    <a href="#" className='px-2 hover:text-slate-400 ease-in-out duration-300 bg-[#000014] '>
+                      Terms & Conditions
+                    </a>
+                  </div>
                 </div>
               </div>
         </section>
