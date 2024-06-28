@@ -52,9 +52,9 @@ export default function Root() {
                   </div>
                   <div className='flex py-20 w-full justify-center'>
                     <div className='flex 2xl:gap-32 gap-16'>
-                        <a href="http://"><img className='2xl:w-20 w-10 hover:scale-105 ease-in-out duration-300 hover:drop-shadow-md' src={XIcon} alt="" /></a>
-                        <a href="http://"><img className='2xl:w-20 w-10 hover:scale-105 ease-in-out duration-300 hover:drop-shadow-md' src={DiscordIcon} alt="" /></a>
-                        <a href="http://"><img className='2xl:w-20 w-10 hover:scale-105 ease-in-out duration-300 hover:drop-shadow-md' src={OpenseaIcon} alt="" /></a>
+                        <a href="https://x.com/TheBunsNFTs"><img className='2xl:w-20 w-10 hover:scale-105 ease-in-out duration-300 hover:drop-shadow-md' src={XIcon} alt="" /></a>
+                        <a href="https://discord.gg/vinylverse"><img className='2xl:w-20 w-10 hover:scale-105 ease-in-out duration-300 hover:drop-shadow-md' src={DiscordIcon} alt="" /></a>
+                        <a href="https://opensea.io/collection/thebunbuns"><img className='2xl:w-20 w-10 hover:scale-105 ease-in-out duration-300 hover:drop-shadow-md' src={OpenseaIcon} alt="" /></a>
                     </div>
                   </div>
                   <div>
