@@ -92,9 +92,9 @@ export default function Root() {
                   </div>
                   <div className="xl:pr-32 px-20 py-20">
                     <p className='xl:text-start text-center text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-semibold'>We Bun</p>
-                    <p className='xl:text-start text-center py-5 font-light text-sm xl:md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A aliquam itaque at repellendus assumenda non dignissimos aperiam labore, odio ab voluptates recusandae quaerat rerum provident pariatur illum modi saepe perferendis. Dignissimos porro, ab, commodi, hic autem incidunt itaque distinctio error nemo laudantium soluta? Praesentium, provident quod. Itaque voluptatibus optio ex facilis laudantium est quae amet magni, voluptatum enim quas nulla corporis porro possimus quidem dignissimos quod accusantium? Velit pariatur id eligendi cum quo officiis asperiores provident, rem voluptatibus error nobis, cupiditate assumenda et quibusdam vel excepturi beatae. Ut consequuntur saepe consequatur culpa itaque quia error eius voluptate, quo doloremque maxime.</p>
+                    <p className='xl:text-start text-center py-5 font-light text-sm xl:md'>Exciting things are on the horizon! Soon, you'll be able to explore our exclusive merchandise, including t-shirts, a delightful coloring book, and adorable plushies inspired by "The Buns." Get ready to bring the charm of our enchanting, rotund hares into your everyday life. Stay tuned for updates and be the first to own these special items!</p>
                     <div className='xl:text-start text-center py-2'>
-                      <a href="http://" className='items-center py-2 px-5 border-2 rounded-lg hover:bg-[#fb592f] ease-in-out duration-300'>More...</a>
+                      <a href="https://x.com/0x_Vinyl" className='items-center py-2 px-5 border-2 rounded-lg hover:bg-[#fb592f] ease-in-out duration-300'>More...</a>
                     </div>
                   </div>
                 </div>

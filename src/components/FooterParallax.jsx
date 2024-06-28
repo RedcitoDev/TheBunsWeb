@@ -40,8 +40,7 @@ const FooterParallax = () => {
           trigger: logo,
           start: "95% 85%",
           end: "100% 50%",
-          scrub: true,
-          markers: true // Añade marcadores para depuración
+          scrub: true
         }
       });
     }
@@ -60,8 +59,7 @@ const FooterParallax = () => {
           trigger: grass2,
           start: "center 85%",
           end: "center 50%",
-          scrub: true,
-          markers: true // Añade marcadores para depuración
+          scrub: true
         }
       });
     }

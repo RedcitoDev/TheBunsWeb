@@ -35,11 +35,10 @@ const EmblaCarousel = (props) => {
 
 
   const images = [
-    { url: 'https://placehold.co/600x400' },
-    { url: 'https://placehold.co/600x400' },
-    { url: 'https://placehold.co/600x400' },
-    { url: 'https://placehold.co/600x400' },
-    { url: 'https://placehold.co/600x400' },
+    { url: 'https://thebunsnfts.com/assets/tshirts-banner.png' },
+    { url: 'https://thebunsnfts.com/assets/plush-banner.png' },
+    { url: 'https://thebunsnfts.com/assets/coloring-book-banner.png' },
+    { url: 'https://thebunsnfts.com/assets/bunstore.png' },
   ];
 
   return (
