@@ -13,13 +13,14 @@ import BunSurf from '../lotties/bunSurf.json'
 import Header from '../components/Header';
 import '../css/embla.css'
 import ComicBun from '../components/ComicBun';
+import NftChecker from '../components/NftChecker';
 export default function Root() {
   const items = [
     { href: 'https://example.com/1', imgSrc: 'https://i.seadn.io/s/primary-drops/0x248e21b0aa161efe3045e3d067d972cd6a01d1b5/31488398:about:media:a947d416-7696-4d76-b1c2-ed1344003fb9.png?auto=format&dpr=1&w=1920', imgAlt: 'Project Lil Buns', title: 'Lil Buns', socialUrlX: 'https://x.com/TheBunsNFTs', socialUrlDis: 'https://discord.gg/vinylverse', socialUrlOS: 'https://opensea.io/collection/hefty-presents' },
     { href: 'https://example.com/2', imgSrc: 'https://i.seadn.io/s/primary-drops/0x805024a55ed4931ce6cebe30fbcecc6d6ce06051/32536419:about:media:6f86f9b6-24f5-46d6-aa7b-2b45b18633db.png?auto=format&dpr=1&w=1920', imgAlt: 'Project Dobutsu', title: 'Dobutsu', socialUrlX: 'x.com/DobutsuNFTs', socialUrlDis: 'https://discord.gg/9kDa6KzWGg', socialUrlOS: 'https://opensea.io/collection/dobutsunfts' },
-    { href: 'https://example.com/3', imgSrc: 'https://via.placeholder.com/500', imgAlt: 'Image 3', title: 'Title 3' },
+    { href: 'https://example.com/3', imgSrc: 'https://placehold.co/1920x1080/EEE/31343C?font=montserrat&text=Coming%20Soon', imgAlt: 'Image 3', title: 'Soon' },
     { href: 'https://example.com/4', imgSrc: 'https://i.seadn.io/s/primary-drops/0x7dbc433c92266ab268ae1040837a212b77fec393/31484123:about:media:4a21eb50-9bdf-43e6-b18b-80f8af2aeb33.png?auto=format&dpr=1&w=1920', imgAlt: 'Project The Buns', title: 'The Buns', socialUrlX: 'https://x.com/TheBunsNFTs', socialUrlDis: 'https://discord.gg/vinylverse', socialUrlOS: 'https://opensea.io/collection/thebunbuns' },
-    { href: 'https://example.com/5', imgSrc: 'https://via.placeholder.com/500', imgAlt: 'Image 5', title: 'Title 5' },
+    { href: 'https://example.com/5', imgSrc: 'https://placehold.co/1920x1080/EEE/31343C?font=montserrat&text=Coming%20Soon', imgAlt: 'Image 5', title: 'Soon' },
   ];
 
   const OPTIONS = { dragFree: true }
@@ -45,7 +46,8 @@ export default function Root() {
             </div>
             <div className='bg-blue-buns w-full text-center md:py-40 z-50'>
                   <ComicBun></ComicBun>
-                  <h3 className='text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-black text-white'>The Collection</h3>
+                  <NftChecker />
+                  <h3 className='text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-black text-white py-10'>The Collection</h3>
                   <p className='text-sm 2xl:text-2xl xl:text-xl md:text-lg font-light 2xl:px-72 md:px-20 px-10 text-white py-10'>The Buns is a captivating collection of 4,444 enchanting, rotund hares, each uniquely frolicking through the verdant forests of the Ethereum blockchain. This collection, rich in intellectual property rights, showcases a tapestry of digital artistry and innovation, marking a milestone of creativity in the blockchain ecosystem.</p>
                   <div className='flex 2xl:px-0 justify-center'>
                     <img className='drop-shadow-md w-[80%] xl:px-20 md:px-10 px-10 hover:scale-105 hover:drop-shadow-lg ease-in-out duration-300' src={GalleryBuns} alt="Gallery of the collection buns hefty hares" />

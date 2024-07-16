@@ -5,7 +5,8 @@ import CloseIcon from '../images/exit.png';
 import Discord from '../images/discord-logo.png';
 import Opensea from '../images/opensea-logo.png';
 import XLogo from '../images/x-logo.png';
-import MenuImage from '../images/bunAlone.png'; // Imagen del lado izquierdo
+import MenuImage from '../images/bunAlone.png';
+import ButtonConnect from './ButtonConnect';
 
 const Header = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -60,18 +61,7 @@ const Header = () => {
                         <img className='w-12 md:w-20' src={Logo} alt="logo The Buns" />
                     </div>
                     <div className='flex items-center'>
-                        <button onClick={connectWallet} className='relative group py-2 px-5 md:py-3 md:px-10 text-white hover:bg-[#fb592f] ease-in-out duration-300 border-slate-100 font-black border-2 rounded-xl'>
-                            {!currentAccount ? (
-                                "Connect Wallet"
-                            ) : (
-                                <span>
-                                    {truncateAddress(currentAccount)}
-                                    <span className="absolute left-1/2 transform -translate-x-1/2 bottom-full mb-2 w-auto p-2 min-w-max bg-black text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        {currentAccount}
-                                    </span>
-                                </span>
-                            )}
-                        </button>
+                        <ButtonConnect accountStatus={{smallScreen: 'avatar', largeScreen: 'address'}} showBalance={false}/>
                     </div>
                 </nav>
             </header>

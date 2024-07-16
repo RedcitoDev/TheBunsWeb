@@ -7,7 +7,6 @@ import Grass from '../images/grass.png';
 import BunAndBook from '../images/bun-and-book.png';
 import DiscordIcon from '../images/discord-logo.png';
 
-
 gsap.registerPlugin(ScrollTrigger);
 
 const ComicBun = () => {
@@ -48,7 +47,7 @@ const ComicBun = () => {
       }, []);
 
   return (
-    <section className='py-20'>
+    <section className='py-10'>
       <div>
         <img className='absolute z-20 w-full h-auto xl:pt-40 pt-48' src={Grass} alt="" />
       </div>
