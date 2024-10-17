@@ -18,9 +18,7 @@ export default function Root() {
   const items = [
     { href: 'https://example.com/1', imgSrc: 'https://i.seadn.io/s/primary-drops/0x248e21b0aa161efe3045e3d067d972cd6a01d1b5/31488398:about:media:a947d416-7696-4d76-b1c2-ed1344003fb9.png?auto=format&dpr=1&w=1920', imgAlt: 'Project Lil Buns', title: 'Lil Buns', socialUrlX: 'https://x.com/TheBunsNFTs', socialUrlDis: 'https://discord.gg/vinylverse', socialUrlOS: 'https://opensea.io/collection/hefty-presents' },
     { href: 'https://example.com/2', imgSrc: 'https://i.seadn.io/s/primary-drops/0x805024a55ed4931ce6cebe30fbcecc6d6ce06051/32536419:about:media:6f86f9b6-24f5-46d6-aa7b-2b45b18633db.png?auto=format&dpr=1&w=1920', imgAlt: 'Project Dobutsu', title: 'Dobutsu', socialUrlX: 'x.com/DobutsuNFTs', socialUrlDis: 'https://discord.gg/9kDa6KzWGg', socialUrlOS: 'https://opensea.io/collection/dobutsunfts' },
-    { href: 'https://example.com/3', imgSrc: 'https://placehold.co/1920x1080/EEE/31343C?font=montserrat&text=Coming%20Soon', imgAlt: 'Image 3', title: 'Soon' },
-    { href: 'https://example.com/4', imgSrc: 'https://i.seadn.io/s/primary-drops/0x7dbc433c92266ab268ae1040837a212b77fec393/31484123:about:media:4a21eb50-9bdf-43e6-b18b-80f8af2aeb33.png?auto=format&dpr=1&w=1920', imgAlt: 'Project The Buns', title: 'The Buns', socialUrlX: 'https://x.com/TheBunsNFTs', socialUrlDis: 'https://discord.gg/vinylverse', socialUrlOS: 'https://opensea.io/collection/thebunbuns' },
-    { href: 'https://example.com/5', imgSrc: 'https://placehold.co/1920x1080/EEE/31343C?font=montserrat&text=Coming%20Soon', imgAlt: 'Image 5', title: 'Soon' },
+    { href: 'https://example.com/4', imgSrc: 'https://i.seadn.io/s/primary-drops/0x7dbc433c92266ab268ae1040837a212b77fec393/31484123:about:media:4a21eb50-9bdf-43e6-b18b-80f8af2aeb33.png?auto=format&dpr=1&w=1920', imgAlt: 'Project The Buns', title: 'The Buns', socialUrlX: 'https://x.com/TheBunsNFTs', socialUrlDis: 'https://discord.gg/vinylverse', socialUrlOS: 'https://opensea.io/collection/thebunbuns' }
   ];
 
   const OPTIONS = { dragFree: true }
@@ -35,11 +33,14 @@ export default function Root() {
         <section className='relative h-auto w-full text-center md:py-0 pt-64'>
             <div className='pt-0 2xl:pt-40 bg-[#000014]'>
                 <h2 className='text-white text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-bold xl:py-0 py-5'>The Buns Hefty Hares</h2>
-                <p className='text-white 2xl:text-2xl 2xl:px-72 xl:text-lg xl:px-52 lg:px-40 md:px-24 px-10 text-sm font-light 2xl:py-32'>The community of The Buns consists of digital art enthusiasts, tech innovators, and passionate collectors who share a love for rotund bunnies and blockchain technology. This vibrant and active community is dedicated to fostering creativity and innovation, providing a space where members can connect, share experiences, and collaborate on new projects.
-                <br />
-                By joining The Buns community, members gain access not only to a unique collection of NFTs but also to a group of individuals who value originality and imagination. Participation in special events, early access to future releases, and the opportunity to influence the collection's development are just a few of the benefits of being part of this community.
-                <br />
-                The collection is not just a showcase of digital art but also an example of the power of collaboration and creativity in the blockchain world. Each rotund bunny in this collection represents a piece of a larger puzzle, a community that celebrates innovation and artistic expression in its purest form.</p>
+                <p className='text-white 2xl:text-2xl 2xl:px-72 xl:text-lg xl:px-52 lg:px-40 md:px-24 px-10 text-sm font-light 2xl:py-32'>
+                  The Buns community is a vibrant group of digital art enthusiasts, tech innovators, and passionate collectors who share a love for whimsical rotund bunnies and blockchain technology. We foster creativity and collaboration, providing a space for members to connect and share ideas.
+                  <br />
+                  By joining The Buns, you gain access to a unique NFT collection and exclusive benefits like early access to releases and participation in special events. Each rotund bunny symbolizes our commitment to originality and artistic expression.
+                  <br />
+                  More than just a showcase of digital art, this collection represents the power of collaboration within the blockchain realm. Join us and be part of this exciting journey!
+                </p>
+
                 <div className='z-10'>
                   <Lottie animationData={BunSurf}></Lottie>
                 </div>
@@ -48,7 +49,7 @@ export default function Root() {
                   <ComicBun></ComicBun>
                   <NftChecker />
                   <h3 className='text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-black text-white py-10'>The Collection</h3>
-                  <p className='text-sm 2xl:text-2xl xl:text-xl md:text-lg font-light 2xl:px-72 md:px-20 px-10 text-white py-10'>The Buns is a captivating collection of 4,444 enchanting, rotund hares, each uniquely frolicking through the verdant forests of the Ethereum blockchain. This collection, rich in intellectual property rights, showcases a tapestry of digital artistry and innovation, marking a milestone of creativity in the blockchain ecosystem.</p>
+                  <p className='text-sm 2xl:text-2xl xl:text-xl md:text-lg font-light 2xl:px-72 md:px-20 px-10 text-white py-10'>Dive into a captivating collection of 4,444 enchanting, rotund bunnies, each joyfully frolicking through the vibrant landscapes of the Ethereum blockchain. This unique collection, infused with intellectual property rights, is a dazzling showcase of digital artistry and innovation. Join us in celebrating a remarkable milestone of creativity that pushes the boundaries of the blockchain ecosystem!</p>
                   <div className='flex 2xl:px-0 justify-center'>
                     <img className='drop-shadow-md w-[80%] xl:px-20 md:px-10 px-10 hover:scale-105 hover:drop-shadow-lg ease-in-out duration-300' src={GalleryBuns} alt="Gallery of the collection buns hefty hares" />
                   </div>
@@ -66,7 +67,7 @@ export default function Root() {
                     <div className='grid grid-cols-2'>
                         <div className='2xl:px-20 xl:px-10 px-5 border-r-2 border-slate-100'>
                           <h4 className='text-3xl 2xl:text-6xl xl:text-5xl font-bold text-white py-5'>Store</h4>
-                          <p className='text-xs 2xl:text-2xl xl:text-xl text-white font-light'>Coming soon, the store will feature exclusive merchandise inspired by The Buns. Get ready to explore a range of unique products that bring the charm of our enchanting, rotund hares into the physical world. From apparel to collectibles, our merchandise will allow fans to celebrate their love for "The Buns" both online and offline. Stay tuned for exciting updates and be among the first to own these special items!</p>
+                          <p className='text-xs 2xl:text-2xl xl:text-xl text-white font-light'>Coming soon, our store will unveil exclusive merchandise inspired by The Buns! Get ready to explore a delightful range of unique products that bring the charm of our enchanting, rotund bunnies into the physical world. From stylish apparel to collectible treasures, our merchandise lets fans celebrate their love for The Buns both online and offline.</p>
                           <div className='py-10 hidden'>
                             <a className='font-light text-xl 2xl:text-5xl text-white py-5 2xl:px-20 px-5 border-slate-100 border-2 rounded-xl' href="#">Shop Now</a>
                           </div>
@@ -76,7 +77,7 @@ export default function Root() {
                         </div>
                         <div className='2xl:px-20 px-5 border-slate-100'>
                           <h4 className='2xl:text-6xl xl:text-5xl text-3xl font-bold text-white py-5'>Community</h4>
-                          <p className='text-xs 2xl:text-2xl xl:text-xl text-white font-light'>Join a vibrant community of digital art enthusiasts and blockchain innovators who celebrate originality and imagination. Engage with like-minded individuals, participate in exclusive events, and enjoy early access to future releases, all while being part of a creative and collaborative environment.</p>
+                          <p className='text-xs 2xl:text-2xl xl:text-xl text-white font-light'>Become part of a dynamic group of digital art enthusiasts and blockchain innovators who celebrate originality and imagination. Connect with like-minded individuals, take part in exclusive events, and enjoy early access to future releases—all within a creative and collaborative environment.</p>
                           <div className='flex justify-center'>
                             <img className='2xl:w-80 w-40' src={BunCommunity} alt="" />
                           </div>
@@ -86,7 +87,7 @@ export default function Root() {
               </div>
               <section className='w-full bg-black text-white'>
                 <div>
-                  <p className='font-bold text-center xl:py-5 py-20 text-white text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl'>Coming Soon</p>
+                  <p className='font-bold text-center xl:py-5 py-20 text-white text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl'>Merch</p>
                 </div>
                 <div className='xl:grid grid-flow-col justify-center'>
                   <div className="xl:py-20 px-20">
@@ -94,7 +95,7 @@ export default function Root() {
                   </div>
                   <div className="xl:pr-32 px-20 py-20">
                     <p className='xl:text-start text-center text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-semibold'>We Bun</p>
-                    <p className='xl:text-start text-center py-5 font-light text-sm xl:md'>Exciting things are on the horizon! Soon, you'll be able to explore our exclusive merchandise, including t-shirts, a delightful coloring book, and adorable plushies inspired by "The Buns." Get ready to bring the charm of our enchanting, rotund hares into your everyday life. Stay tuned for updates and be the first to own these special items!</p>
+                    <p className='xl:text-start text-center py-5 font-light text-sm xl:md'>Get ready to explore our exclusive merchandise, featuring stylish t-shirts, a delightful coloring book, and adorable plushies inspired by The Buns! Soon, you'll be able to bring the charm of our enchanting, rotund bunnies into your everyday life.</p>
                     <div className='xl:text-start text-center py-2'>
                       <a href="https://x.com/0x_Vinyl" className='items-center py-2 px-5 border-2 rounded-lg hover:bg-[#fb592f] ease-in-out duration-300'>More...</a>
                     </div>

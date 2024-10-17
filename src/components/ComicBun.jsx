@@ -58,7 +58,7 @@ const ComicBun = () => {
         <img className='relative hidden xl:flex z-20 xl:w-[40%] w-[60%] h-auto hover:scale-105 duration-300 ease-in-out pb-40 book-image' src={Book} alt="" />
         <div className='relative z-20 flex-nowrap xl:bg-transparent'>
           <h1 className='text-4xl 2xl:text-9xl xl:text-8xl md:text-7xl font-black text-white'>The Coloring Book</h1>
-          <p className='text-center text-white font-light px-10 py-5'>We're excited to announce the upcoming release of "The Buns" coloring book! Dive into the whimsical world of our enchanting, rotund hares with beautifully illustrated pages that bring each unique bunny to life. Perfect for all ages, this coloring book offers a fun and creative way to engage with "The Buns" collection. Stay tuned for more details and get ready to add your own splash of color to these delightful characters!</p>
+          <p className='text-center text-white font-light px-10 py-5'>We’re thrilled to announce the upcoming release of "The Buns" coloring book! Dive into the whimsical world of our charming, plump bunnies, featuring beautifully illustrated pages that bring each unique character to life. Perfect for all ages, this coloring book offers a fun and creative way to engage with the "Buns" collection. Stay tuned for more details and get ready to add your own splash of color to these delightful characters!</p>
           <div className='flex justify-center'>
             <a className='hover:scale-105 duration-300 ease-in-out flex items-center border-2 px-5 py-2 rounded-full hover:bg-[#fb592f]' href="https://discord.gg/vinylverse">
               <img className='w-10 pr-2' src={DiscordIcon} alt="" />
